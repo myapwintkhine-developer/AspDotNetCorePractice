@@ -1,0 +1,37 @@
+﻿<form action="/CurrencyConverter/CurrencyConvertorV1" method="post">
+    <table align="center" border="1">
+        <tr><td colspan="2" align="center">
+            <b>Currency Converter to MMK</b>
+        </td></tr>
+        <tr>
+            <td>
+            Choose Currency:
+        </td>
+            <td>
+                <select name="fromCurrency">
+                    <option value="">--Select One--</option>
+                    <option value="usd">USD Dollar</option>
+                    <option value="sgd">Singapore Dollar</option>
+                    <option value="tbh">Thai Baht</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Amount</td>
+            <td><input type="text" name="amount"/></td>
+        </tr>
+        <tr>
+            <td>
+        Result (MMK):
+        </td>
+        <td><input type="number" value="@ViewBag.Result" readonly/></td>
+    </tr>
+        <tr>
+            <td></td>
+            <td>
+            <input type="submit" value="Convert" />
+        </td>
+        </tr>
+        <tr><td colspan="2" align="center"><span style="color:red;text-align:center"><b>@ViewBag.msg</b></span></td></tr>
+    </table>
+</form>

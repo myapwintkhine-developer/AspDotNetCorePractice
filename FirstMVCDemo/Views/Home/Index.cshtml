@@ -1,0 +1,17 @@
+﻿<body style="background-color:gray">
+    <h1>This is my index page.</h1>
+    <div>Time is : @ViewBag.Info
+        @{
+            int i = 100;
+        }
+        @if (i > 10)
+        {
+            <b>Hi I am from inside if statement</b>
+        }
+    </div>
+    <a href="/AboutUs/Index"> Go to about us</a>
+    <a href="/AboutUs/CalculateSum"> Calculate Sum</a>
+    <a href="/aboutus/simpledownload">Download File</a>
+    <a href="/aboutus/TellYourFullName">Tell your name</a>
+    <a href="/student/register">Student Register</a>
+</body>
